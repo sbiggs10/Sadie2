@@ -1,0 +1,143 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1, h2 {
+  color: #555;
+}
+
+/* Header Section */
+.header {
+  background-color: #e0bfb8;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .logo h1 {
+  font-size: 28px;
+  color: #fff;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Section Styling */
+section {
+  padding: 50px 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* Shop Section */
+.shop-items {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  flex-basis: 45%;
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.item h3 {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+/* Contact Section */
+.contact button {
+  padding: 10px 20px;
+  background-color: #e0bfb8;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #555;
+  color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .shop-items {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .item {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navbar a {
+    font-size: 14px;
+  }
+
+  section h2 {
+    font-size: 28px;
+  }
+}
+
